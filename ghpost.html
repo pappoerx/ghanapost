@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ghpoststyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_body">
+        <form class="body_form" id="bodyId">
+            <img src="ghanapost.webp" alt="Ghana Post">
+            <h4>E-voucher Checker</h4>
+            <input type="number" placeholder="Enter mobile number" required id="numberId">
+            <input type="number" placeholder="Enter payment Transaction ID" required id="transactionId">
+            <button type="button" onclick="confirm(event)">Check for details</button>
+        </form>
+        <div class="body_modal" id="modalId">
+            <svg class="copy-icon" onclick="copyText()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+            </svg>            
+            <button onclick="done()" class="mbutton">Done</button>
+            <div class="text" id="textId"></div>
+        </div>
+    </div>
+<script src="ghpostfunction.js"></script>   
+</body>
+</html>
